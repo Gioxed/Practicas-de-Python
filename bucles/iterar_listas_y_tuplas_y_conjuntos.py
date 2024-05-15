@@ -18,7 +18,7 @@ for numero, animal in zip(animales, numeros):
 for num in range(5, 10):
     print(num)
     
-#forma no oprima de recorrer una lista con su indice
+#forma no optima de recorrer una lista con su indice (no funciona en conjuntos)
 for num in range(len(numeros)):
     print(numeros[num])
     
@@ -27,3 +27,11 @@ for num in enumerate(numeros):
     indice = num[0]
     valor = num[1]
     print(f"el indice es: {indice} y el valor es: {valor}")
+    
+#usando el else
+for numero in numeros:
+    print("ejecutando el ultimo bucle, valor actual:", numero)
+else: 
+    print("el bucle terminó")
+
+#todo lo anterior funciona exactamente igual para tuplas y conjuntos
