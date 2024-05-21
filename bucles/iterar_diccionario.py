@@ -8,7 +8,7 @@ diccionario = {
 for key in diccionario:
     print("la clave es:", key)
 
-#recorrer un diccionario con items() para obtener las clave y el valor
+#recorrer un diccionario con items() para obtener las clave y los valores
 for datos in diccionario.items():
     key = datos[0]
     value = datos[1]
